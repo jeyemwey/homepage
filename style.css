@@ -1,0 +1,123 @@
+/* lato-regular - latin */
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  src: url('fonts/lato/lato-v14-latin-regular.eot'); /* IE9 Compat Modes */
+  src: local('Lato Regular'), local('Lato-Regular'),
+       url('fonts/lato/lato-v14-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('fonts/lato/lato-v14-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+       url('fonts/lato/lato-v14-latin-regular.woff') format('woff'), /* Modern Browsers */
+       url('fonts/lato/lato-v14-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('fonts/lato/lato-v14-latin-regular.svg#Lato') format('svg'); /* Legacy iOS */
+}
+
+/* lato-italic - latin */
+@font-face {
+  font-family: 'Lato';
+  font-style: italic;
+  font-weight: 400;
+  src: url('fonts/lato/lato-v14-latin-italic.eot'); /* IE9 Compat Modes */
+  src: local('Lato Italic'), local('Lato-Italic'),
+       url('fonts/lato/lato-v14-latin-italic.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('fonts/lato/lato-v14-latin-italic.woff2') format('woff2'), /* Super Modern Browsers */
+       url('fonts/lato/lato-v14-latin-italic.woff') format('woff'), /* Modern Browsers */
+       url('fonts/lato/lato-v14-latin-italic.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('fonts/lato/lato-v14-latin-italic.svg#Lato') format('svg'); /* Legacy iOS */
+}
+
+html {
+  transition: all 0.5s ease;
+  background-color: rgb(34, 34, 33);
+}
+.container {
+  width: 25em;
+  max-width: 100%;
+  margin: 0 auto;
+  position: relative;
+  color: white;
+  background-color: white;
+  font-family: Lato, "open sans", "Helvetica Neue", Arial, sans-serif;
+  box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.3);
+}
+
+.triangles {
+  position: absolute;
+  margin: 0 0 0 auto;
+  right: 0px;
+}
+.triangles .tri {
+  width: 0;
+  height: 0;
+  border-style: solid;
+}
+.triangles .clear {
+  border-width: 0 3.5em 3.5em 0;
+  border-color: transparent transparent transparent #2196F3;
+  transition: all 0.5s ease;
+}
+.triangles .darker {
+  float: right;
+  border-width: 3.5em 0 0 3.5em;
+  border-color: transparent transparent transparent #0c84e4;
+  display: none;
+}
+
+#card {
+  margin: 23.8px auto 0;
+  background-color: #2196F3;
+  padding: 0 0 23.8px;
+  text-align: center;
+  vertical-align: middle;
+  font-size: 1.2em;
+}
+
+#card img {
+  max-width: 100%;
+}
+
+.social {
+  text-align: center;
+  border-top: 0;
+}
+.social ul {
+  list-style: none;
+  padding: 2em 0;
+  margin: 0;
+}
+.social li {
+  display: inline;
+  padding-right: 0.9em;
+}
+.social li:last-child {
+  padding-right: 0em;
+}
+.social li i {
+  font-size: 3em !important;
+  text-decoration: none;
+  color: #00405d;
+  transition: color 0.3s;
+}
+@media screen and (max-width: 23em) {
+  .social li i {
+    font-size: 2em !important;
+  }
+}
+/*.genericon {
+  font-family: "Genericons-Neue";
+}*/
+.social li i:hover.genericon-standard {
+  color: #f57d00;
+}
+.social li i:hover.genericon-twitter {
+  color: #55acee;
+}
+.social li i:hover.genericon-youtube {
+  color: #cd201f;
+}
+.social li i:hover.genericon-github {
+  color: #6cc644;
+}
+.social li i:hover.genericon-instagram {
+  color: #3f729b;
+}
